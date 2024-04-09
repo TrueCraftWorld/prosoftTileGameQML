@@ -78,9 +78,8 @@ Window {
             onYChanged: {
                 if ((backRect.y + backRect.height) >= root.height) {
                     root.isLost = true;
-
                 }
-                else if ((backRect.y) >= root.height){
+                if ((backRect.y) >= root.height){
                     backRect.destroy()
                 }
             }
